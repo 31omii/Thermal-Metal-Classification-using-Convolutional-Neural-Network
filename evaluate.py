@@ -60,8 +60,8 @@ def evaluate_model(model_name):
         test_dataset,
         batch_size=BATCH_SIZE,
         shuffle=False,
-        num_workers=NUM_WORKERS,
-        pin_memory=PIN_MEMORY,
+        num_workers = NUM_WORKERS,
+        pin_memory = PIN_MEMORY,
     )
 
     model = get_model(model_name)
@@ -132,15 +132,13 @@ def evaluate_model(model_name):
     recall = recall_score(
         ground_truth,
         predictions,
-        average="weighted",
-        zero_division=0
+        average="weighted"
     )
 
     f1 = f1_score(
         ground_truth,
         predictions,
-        average="weighted",
-        zero_division=0
+        average="weighted"
     )
 
     cm = confusion_matrix(
