@@ -124,7 +124,7 @@ python predict.py --input path/to/thermal_sequence/ --model resnet18
 - PyTorch
 - NumPy
 - scikit-learn (metrics)
-- FLIR / Fluke RSE30H (data acquisition)
+- Fluke RSE30H (data acquisition)
 
 ---
 
